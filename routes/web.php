@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
+    return Inertia::render('Simulator', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -15,7 +15,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/simulator', [SimulatorController::class, 'index'])->name('simulator');
+Route::get('/', [SimulatorController::class, 'index'])->name('simulator');
 Route::post('/simulation', [SimulatorController::class, 'calculateSimulation']);
 
 
