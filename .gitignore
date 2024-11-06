@@ -42,11 +42,6 @@ Thumbs.db
 /.phpunit.result.cache
 /.vscode
 
-# Composer and npm related
-composer.lock
-package-lock.json
-yarn.lock
-
 # IDE specific
 .idea
 .vscode
@@ -58,10 +53,6 @@ yarn.lock
 /.vite
 /vite
 
-# Tailwind
-tailwind.config.js
-tailwind.config.ts
-
 # Typescript build files
 /dist
 /build
@@ -70,11 +61,6 @@ tailwind.config.ts
 # Coverage files
 /coverage
 /lcov-report
-
-# Build outputs
-/resources/js/app.js
-/resources/js/app.ts
-/resources/js/app.tsx
 
 # Shadcn specific (if any configuration files should not be tracked)
 .shadcn-ui

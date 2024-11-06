@@ -31,7 +31,7 @@ COPY . .
 RUN mkdir -p /var/www/html/database && touch /var/www/html/database/database.sqlite
 
 # Copier le fichier .env.example en .env si le fichier .env n'existe pas
-RUN cp .env.example .env || true
+RUN cp .env.example .env
 
 # Installe les dépendances Composer et Node.js
 RUN composer install
