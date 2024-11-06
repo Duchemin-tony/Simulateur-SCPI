@@ -19,15 +19,7 @@ git clone https://github.com/Duchemin-tony/simulateur-scpi
 cd simulateur-scpi
 ```
 
-### 2. Environment Configuration
-
-Copy the `.env.example` file to `.env` to create the necessary environment variables:
-
-```bash
-cp .env.example .env
-```
-
-### 3. Launch the Project with Docker
+### 2. Launch the Project with Docker
 
 For a quick setup and one-command launch, Docker is recommended.
 
