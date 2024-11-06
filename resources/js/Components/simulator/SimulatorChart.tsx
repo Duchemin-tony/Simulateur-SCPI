@@ -59,8 +59,9 @@ const InvestmentChart: React.FC<InvestmentChartProps> = ({ data }) => {
                         <YAxis
                             tickLine={false}
                             axisLine={false}
-                            tick={{ fontSize: 12, fill: "#6B7280" }}
+                            tick={{ fontSize: 12, fill: "#6B7280", dx: 0 }}
                             tickFormatter={formatYAxis}
+                            label={{ position: "insideLeft", offset: 0, fill: "#6B7280" }}
                         />
                         <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
                         <Area
